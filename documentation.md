@@ -4,11 +4,9 @@ Sina Tech Services is a startup project providing software development and SEO o
 
 <h2 id = "contents"> Table Of Contents </h2>
 
-- [Sina Tech Services](#sinatechservices)
-  - [Table of Contents](#contents)
-  - [Getting Started](#getting-started)
-    - [Project Specifications](#specifications)
-    - [Server Configuration](#configuration)
+- [Getting Started](#getting-started)
+- [Project Specifications](#specifications)
+- [Server Configuration](#configuration)
 
 <h2 id = "getting-started"> Getting Started </h2>
 
