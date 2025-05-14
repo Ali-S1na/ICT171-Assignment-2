@@ -12,3 +12,6 @@ Sina Tech Services is a startup project providing software development and SEO o
 <h2> Getting Started </h2>
 <h3> Project Specifications </h3>
 <li> <b> Cloud Provider: </b> AWS EC2  </li>
+<li> <b> Instance Type: </b> t2.micro  </li>
+<li> <b> Operating System: </b> Ubuntu 24.02 LTS  </li>
+<li> <b> Domain: </b> www.sinatechservices.com  </li>
