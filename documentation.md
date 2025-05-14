@@ -17,4 +17,5 @@ Sina Tech Services is a startup project providing software development and SEO o
 
 <h2 id = "configuration">Server Configuration </h2>
 First, create an AWS EC2 account to proceed with server configuration. This may take a while due to credit card checks. Once created, log into the account and follow the given steps to launch a successfull AWS EC2 instance (virtual machine).
+
 <br><li> Navigate to EC2 dashboard and select <b> Launch Instance </b> </li>
