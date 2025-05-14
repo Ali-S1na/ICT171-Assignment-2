@@ -8,7 +8,7 @@ Sina Tech Services is a startup project providing software development and SEO o
   - [Table of Contents](#contents)
   - [Getting Started](#getting-started)
     - [Project Specifications](#specifications)
-    - [Configuration](#configuration)
+    - [Server Configuration](#configuration)
 
 <h2 id = "getting-started"> Getting Started </h2>
 
@@ -18,4 +18,5 @@ Sina Tech Services is a startup project providing software development and SEO o
 <li> <b> Operating System: </b> Ubuntu 24.02 LTS  </li>
 <li> <b> Domain: </b> www.sinatechservices.com  </li>
 
-<h2 id = "configuration"> Configuration </h2>
+<h2 id = "configuration">Server Configuration </h2>
+First, create an AWS EC2 account to proceed with server configuration. This may take a while due to credit card checks. Once created, log into the account and follow the given steps to launch a successfull AWS EC2 instance.
