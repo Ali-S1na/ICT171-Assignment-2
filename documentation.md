@@ -10,15 +10,18 @@ Sina Tech Services is a startup project providing software development and SEO o
 <h2 id = "getting-started"> Getting Started </h2>
 
 <h3 id = "specifications"> Project Specifications </h3>
-- <b> Cloud Provider: </b> AWS EC2 
-- <b> Instance Type: </b> t2.micro 
-- <b> Operating System: </b> Ubuntu 24.02 LTS 
-- <b> Domain: </b> www.sinatechservices.com 
+<ul> 
+    <li> <b> Cloud Provider: </b> AWS EC2  </li>
+    <li> <b> Instance Type: </b> t2.micro  </li>
+    <li> <b> Operating System: </b> Ubuntu 24.02 LTS  </li>
+    <li> <b> Domain: </b> www.sinatechservices.com  </li>
+</ul>
 
 <h2 id = "configuration">Server Configuration </h2>
 First, create an AWS EC2 account to proceed with server configuration. This may take a while due to credit card checks. Once created, log into the account and follow the given steps to launch a successfull AWS EC2 instance (virtual machine).[space][space]
 
-
-- Navigate to EC2 dashboard and select <b> Launch Instance </b>
+<ul>
+    <li> Navigate to EC2 dashboard and select <b> Launch Instance </b> </li>
+</ul>
 
 
