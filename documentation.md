@@ -1,1 +1,1 @@
-<h1 align="centre"> Sina Tech Services </h1>
+<h1 text-align="centre"> Sina Tech Services </h1>
