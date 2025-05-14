@@ -21,9 +21,8 @@
 First, create an AWS EC2 account to proceed with server configuration. This may take a while due to credit card checks. Once created, log into the account and follow the given steps to launch a successfull AWS EC2 instance (virtual machine).
 
 
-
 <ul>
-    <li> Navigate to EC2 dashboard and select <b> Launch Instance </b> </li>
+    <li> Navigate to EC2 dashboard and select <b> Launch Instance. </b> </li>
 </ul>
 
 
