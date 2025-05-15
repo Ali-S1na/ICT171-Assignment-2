@@ -2,10 +2,11 @@
 <p> Sina Tech Services is a startup project providing software development and SEO optimization services to small businesses. This project is deployed on an AWS cloud server running Ubuntu Linux to host our business applications and manage clients. </p>
 
 <h2 id = "contents"> Table Of Contents </h2>
-
-- [Getting Started](#getting-started)
-- [Project Specifications](#specifications)
-- [Server Configuration](#configuration)
+<ul>
+    <li> <a href = "#getting-started"> Getting Started </a> </li>
+    <li> <a href = "#specifications"> Project Specifications </a> </li>
+    <li> <a href = "#configuration"> Server Configuration </a> </li>
+</ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
 
