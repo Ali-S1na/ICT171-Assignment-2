@@ -6,6 +6,7 @@
     <li> <a href = "#getting-started"> Getting Started </a> </li>
     <li> <a href = "#specifications"> Project Specifications </a> </li>
     <li> <a href = "#configuration"> Server Configuration </a> </li>
+    <li> <a href = "#access"> Accessing the Virtual Machine </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
@@ -34,5 +35,7 @@ First, create an AWS EC2 account to proceed with server configuration. This may 
     <li> Review and if satisfied with the changes, click <b> Launch Instance </b> </li>
     <li> After this, the Amazon EC2 instance will be launched. You can monitor its status by navigating to EC2 dashboard and select "Instances". </li>
 </ul>
+
+<h2 id = "access">Accessing the Virtual Machine </h2>
 
 
