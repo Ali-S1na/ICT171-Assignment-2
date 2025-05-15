@@ -5,7 +5,7 @@
 <ul>
     <a href = "#getting-started"> <li> Getting Started </li> </a>
     <a href = "#specifications"> <li> Project Specifications </li> </a>
-    <li href = "#configuration"> Server Configuration </li>
+    <li> <a href = "#configuration"> Server Configuration </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
