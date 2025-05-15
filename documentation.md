@@ -24,6 +24,15 @@ First, create an AWS EC2 account to proceed with server configuration. This may 
 
 <ul>
     <li> Navigate to EC2 dashboard and select <b> Launch Instance. </b> </li>
+    <li> Name the AWS EC2 instance (e.g., sinatech-server). </li>
+    <li> Select an operating system for the virtual machine (Ubuntu Server 24.04 LTS). </li>
+    <li> Select instance type (t2.micro). </li>
+    <li> Create a key pair for the AWS EC2 instance. Give it a meaningful name like "sinatech-webserver-key" which could be easily identified later on. Download and keep this key pair safe as this will be used later on to remotely access the virtual machine. </li>
+    <li> Configure security group. You can name this group anything (e.g., sinatech-security). </li>
+    <li> Add security group rules SSH, HTTP, and HTTPS. SSH allows remote access to the virtual machine while HTTP and HTTPS enables users to access the site. </li>
+    <li> Leave rest of the fields at the default. </li>
+    <li> Review and if satisfied with the changes, click <b> Launch Instance </b> </li>
+    <li> After this, the Amazon EC2 instance will be launched. You can monitor its status by navigating to EC2 dashboard and select "Instances". </li>
 </ul>
 
 
