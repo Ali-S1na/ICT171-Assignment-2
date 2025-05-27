@@ -8,6 +8,7 @@
     <li> <a href = "#configuration"> Server Configuration </a> </li>
     <li> <a href = "#access"> Accessing the Virtual Machine </a> </li>
     <li> <a href = "#apache"> Installing Apache </a> </li>
+    <li> <a href = "#domain"> Domain Registration and Configuration </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
@@ -50,4 +51,16 @@ Now you have console access to the virtual machine.
 After having console access to the virtual machine, we need to Install Apache Webserver to start hosting our website. But before that, we need to update the apt repositories in case they may be out of date. We can update them with <pre> <code> sudo apt update </code> </pre>
 Once updated, now we install Apache Webserver with <pre> <code> sudo apt install apache2 </code> </pre>
 Once installed, a default webpage will already be hosted on the virtual machine. You can visit it by typing AWS EC2's public IP address in your web browser.
+
+<h2 id = "domain"> Domain Registration and Configuration </h2>
+Websites over the internet can be accessed by typing their associated IP addresses in the web browser, but remembering every complex IP addresses of websites over the internet is close to impossible. Therefore, domain names, which are human-friendly address of a website, are used to access them. Register a domain name through any registrar (e.g, GoDaddy, Namecheap) and follow the given steps to link the website with the registered domain name.
+<ul>
+    <li> Once registered, log in to the account created in the domain registrar's website.</li>
+    <li> Once logged in, navigate to <b> My Account </b> and then <b> Doamins </b> </li>
+    <li> There you can see the domain registered by you in the domain registrar's company. Select your domain and then navigate to DNS section.</li>
+    <li> In DNS section, select type A record.</li>
+    <li> In the "Name" field, type the full name of your registered domain. In this case, www.sinatechservices.com </li>
+    <li> In the "value" tag, type the public IP address of the AWS EC2 instance. you can find it when clicking <b> Connect </b> on the instance</li>
+    <li> In the "TTL" tag, select custom and type 600 in the "Seconds" field.</li>
+</ul>
 
