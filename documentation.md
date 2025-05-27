@@ -47,6 +47,6 @@ The server is now created and running in the cloud. Now you need to have SSH acc
 Now you have console access to the virtual machine.
 
 <h2 id = "apache"> Installing Apache </h2>
-
+After having console access to the virtual machine, we need to Install Apache Webserver to start hosting our website. But before that, we need to update the apt repositories in case they may be out of date. We can update them with <pre> <code> sudo apt update </code> </pre>
 
 
