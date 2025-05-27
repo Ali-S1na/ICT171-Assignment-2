@@ -58,9 +58,10 @@ Websites over the internet can be accessed by typing their associated IP address
     <li> Once registered, log in to the account created in the domain registrar's website.</li>
     <li> Once logged in, navigate to <b> My Account </b> and then <b> Doamins </b> </li>
     <li> There you can see the domain registered by you in the domain registrar's company. Select your domain and then navigate to DNS section.</li>
-    <li> In DNS section, select type A record.</li>
-    <li> In the "Name" field, type the full name of your registered domain. In this case, www.sinatechservices.com </li>
+    <li> In DNS section, select <b> Add New Record </b> and select "A" from "Type".</li>
+    <li> In the "Name" field, type @ which will connect the IP address with main domain. In this case, www.sinatechservices.com </li>
     <li> In the "value" tag, type the public IP address of the AWS EC2 instance. you can find it when clicking <b> Connect </b> on the instance</li>
     <li> In the "TTL" tag, select custom and type 600 in the "Seconds" field.</li>
 </ul>
+Now you can access the website hosted on virtual machine by typing the registered domain name in the browser
 
