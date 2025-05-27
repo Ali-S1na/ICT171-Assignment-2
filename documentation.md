@@ -63,5 +63,5 @@ Websites over the internet can be accessed by typing their associated IP address
     <li> In the "value" tag, type the public IP address of the AWS EC2 instance. you can find it when clicking <b> Connect </b> on the instance</li>
     <li> In the "TTL" tag, select custom and type 600 in the "Seconds" field.</li>
 </ul>
-<br>Now you can access the website hosted on virtual machine by typing the registered domain name in the browser.
+Now you can access the website hosted on virtual machine by typing the registered domain name in the browser.
 
