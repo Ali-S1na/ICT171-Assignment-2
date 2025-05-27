@@ -32,10 +32,16 @@ First, create an AWS EC2 account to proceed with server configuration. This may 
     <li> Configure security group. You can name this group anything (e.g., sinatech-security). </li>
     <li> Add security group rules SSH (port 22), HTTP (port 80), and HTTPS (port 443). SSH allows remote access to the virtual machine while HTTP and HTTPS enable users to access the site. </li>
     <li> Leave rest of the fields at the default. </li>
-    <li> Review and if satisfied with the changes, click <b> Launch Instance </b> </li>
+    <li> Review and if satisfied with the changes, click <b> Launch Instance. </b> </li>
     <li> After this, the Amazon EC2 instance will be launched. You can monitor its status by navigating to EC2 dashboard and select "Instances". </li>
 </ul>
 
 <h2 id = "access">Accessing the Virtual Machine </h2>
+The server is now created and running in the cloud. Now you need to have SSH access to the virtual machine. Follow the given steps below to have console access to the server.
+<ul>
+    <li> Select the virtual machine created and click on the "Connect" button provided. </li>
+    <li> Select <b> Instance ID </b> and you will note a string provided under <b> Public DNS </b>. It should look something like this: </li>
+        this will do
+</ul>
 
 
