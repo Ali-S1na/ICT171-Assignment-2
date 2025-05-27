@@ -42,6 +42,8 @@ The server is now created and running in the cloud. Now you need to have SSH acc
     <li> Select the virtual machine created and click on the "Connect" button provided. </li>
     <li> Select <b> Instance ID </b> and you will note a string provided under <b> Public DNS</b>. It should look something like this: </li>
 </ul>
-<script src="https://gist.github.com/Ali-S1na/29db36043522ee3d731e4f7c6594308f.js"></script>
+```
+like this
+```
 
 
