@@ -40,7 +40,7 @@ First, create an AWS EC2 account to proceed with server configuration. This may 
 The server is now created and running in the cloud. Now you need to have SSH access to the virtual machine. Follow the given steps below to have console access to the server.
 <ul>
     <li> Select the virtual machine created and click on the "Connect" button provided. </li>
-    <li> Select <b> Instance ID </b> and you will note a string provided under <b> Public DNS</b>. It should look something like this: <pre> <code> ec2-3-25-114-116.ap-southeast-2.compute.amazonaws.com </code> </pre></li>
+    <li> Select <b> Instance ID </b> and you will note a string provided under <b> Public DNS</b>. It should look something like this: <br><pre> <code> ec2-3-25-114-116.ap-southeast-2.compute.amazonaws.com </code> </pre></li>
 </ul>
 
 
