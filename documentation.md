@@ -41,9 +41,9 @@ The server is now created and running in the cloud. Now you need to have SSH acc
 <ul>
     <li> Select the virtual machine created and click on the "Connect" button provided. </li>
     <li> Select <b> Instance ID </b> and you will note a string provided under <b> Public DNS</b>. It should look something like this: <pre> <code> ec2-3-25-114-116.ap-southeast-2.compute.amazonaws.com </code> </pre> </li>
-    <li> Open Linux command line, use 'cd' to move to the directory where the key pair "sinatech-webserver-key" is saved, then paste the given command line. <pre> <code> ssh -i sinatech-webserver-key.pem ubuntu@ec2-3-25-114-116.ap-southeast-2.compute.amazonaws.com </code> </pre></li>
-    <li> Now you have console access to the virtual machine. </li>
+    <li> Open Linux command line, use 'cd' to move to the directory where the key pair "sinatech-webserver-key" is saved, then paste the given command line. <pre> <code> ssh -i sinatech-webserver-key.pem ubuntu@ec2-3-25-114-116.ap-southeast-2.compute.amazonaws.com </code> </pre></li> 
 </ul>
+Now you have console access to the virtual machine.
 
 
 
