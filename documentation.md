@@ -53,7 +53,7 @@ Once updated, now we install Apache Webserver with <pre> <code> sudo apt install
 Once installed, a default webpage will already be hosted on the virtual machine. You can visit it by typing AWS EC2's public IP address in your web browser.
 
 <h2 id = "domain"> Domain Registration and Configuration </h2>
-Websites over the internet can be accessed by typing their associated IP addresses in the web browser, but remembering every complex IP addresses of websites over the internet is close to impossible. Therefore, domain names, which are human-friendly address of a website, are used to access them. Register a domain name through any registrar (e.g, GoDaddy, Namecheap) and follow the given steps to link the website with the registered domain name.
+Websites over the internet can be accessed by typing their associated IP addresses in the web browser, but remembering every complex IP addresses of websites over the internet is close to impossible. Therefore, domain names, which are human-friendly address of a website, are used to access them. <br>Register a domain name through any registrar (e.g, GoDaddy, Namecheap) and follow the given steps to link the website with the registered domain name.
 <ul>
     <li> Once registered, log in to the account created in the domain registrar's website.</li>
     <li> Once logged in, navigate to <b> My Account </b> and then <b> Doamins </b> </li>
@@ -63,5 +63,5 @@ Websites over the internet can be accessed by typing their associated IP address
     <li> In the "value" tag, type the public IP address of the AWS EC2 instance. you can find it when clicking <b> Connect </b> on the instance</li>
     <li> In the "TTL" tag, select custom and type 600 in the "Seconds" field.</li>
 </ul>
-Now you can access the website hosted on virtual machine by typing the registered domain name in the browser
+Now you can access the website hosted on virtual machine by typing the registered domain name in the browser.
 
