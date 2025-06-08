@@ -9,6 +9,7 @@
     <li> <a href = "#access"> Accessing the Virtual Machine </a> </li>
     <li> <a href = "#apache"> Installing Apache </a> </li>
     <li> <a href = "#domain"> Domain Registration and Configuration </a> </li>
+    <li> <a href = "#website"> Website Development </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
@@ -67,3 +68,6 @@ Websites over the internet can be accessed by typing their associated IP address
 </ul>
 Now you can access the website hosted on virtual machine by typing the registered domain name in the browser.
 
+<h2 id = "website"> Website Development </h2>
+Now that the virtual machine is configured and the domain name is successfully translated into the associated IP address, we need to build our website and move it to the server. A website typically consists of 3 important parts which are HTML, CSS, and Javascript. HTML makes the overall structure of the website whereas CSS brings styles and colors to it. On the other hand, Javascript mkaes the web pages more interactive and dynamic. <br>
+For this project, a free template is used from [Start Bootstrap](https://startbootstrap.com/template/scrolling-nav) which is licensed under the [MIT License](https://opensource.org/licenses/MIT)
