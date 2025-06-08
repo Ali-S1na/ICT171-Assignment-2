@@ -9,7 +9,7 @@
     <li> <a href = "#access"> Accessing the Virtual Machine </a> </li>
     <li> <a href = "#apache"> Installing Apache </a> </li>
     <li> <a href = "#domain"> Domain Registration and Configuration </a> </li>
-    <li> <a href = "#website"> Website Development </a> </li>move-website
+    <li> <a href = "#website"> Website Development </a> </li>
     <li> <a href = "#move-website"> Moving Website to the Server </a> </li>
 </ul>
 
@@ -88,8 +88,8 @@ Now that the webpages are developed, we need to move it to the virtual machine, 
     <li> Then type the given code to gain SSH access into the virtual machine <pre> <code> ssh -i sinatech-webserver-key.pem ubuntu@sinatechservices.com </code> </pre> </li>
     <li> Once accessed, navigate to the folder where a default html page is saved <pre> <code> cd /var/www/html</code> </pre></li>
     <li> Remove the default html page <pre> <code> sudo rm index.html</code> </pre></li>
-    <li> Once removed, exit the EC2 instance, comeback to Linux command line, and uoload the necessary website files to the same folder where the key pair "sinatech-webserver-key.pem" is saved.</li>
-    <li> Use the following command to move each file in home directory of the virtual machine. <pre> <code> scp -i sinatech-webserver-key.pem filename ubuntu@sinatechservices.com:~/</code> </pre></li>
-    <li> Now SSH into the virtual machine move the website files from home directory to /var/www/html using sudo command. <pre> <code> sudo mv filename /var/www/html</code> </pre></li>
+    <li> Once removed, exit the EC2 instance, comeback to Linux command line, and upload the necessary website files to the same folder where the key pair "sinatech-webserver-key.pem" is saved.</li>
+    <li> Use the following command to move each file to home directory of the virtual machine. <pre> <code> scp -i sinatech-webserver-key.pem filename ubuntu@sinatechservices.com:~/</code> </pre></li>
+    <li> Now SSH into the virtual machine and move the website files from home directory to /var/www/html using sudo command. <pre> <code> sudo mv filename /var/www/html</code> </pre></li>
     <li> Once all the files are moved to /var/www/html the virtual machine will start hosting the website and it can be accessed by typing the domain name "www.sinatechservices.com" in the browser.</li>
 </ul>
