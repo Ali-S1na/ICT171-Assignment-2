@@ -9,7 +9,8 @@
     <li> <a href = "#access"> Accessing the Virtual Machine </a> </li>
     <li> <a href = "#apache"> Installing Apache </a> </li>
     <li> <a href = "#domain"> Domain Registration and Configuration </a> </li>
-    <li> <a href = "#website"> Website Development </a> </li>
+    <li> <a href = "#website"> Website Development </a> </li>move-website
+    <li> <a href = "#move-website"> Moving Website to the Server </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
@@ -71,11 +72,24 @@ Now you can access the website hosted on virtual machine by typing the registere
 <h2 id = "website"> Website Development </h2>
 Now that the virtual machine is configured and the domain name is successfully translated into the associated IP address, we need to build our website and move it to the server. A website typically consists of 3 important parts which are HTML, CSS, and Javascript. HTML makes the overall structure of the website whereas CSS brings styles and colors to it. On the other hand, Javascript mkaes the web pages more interactive and dynamic. <br>
 For this project, a free template is used from [Start Bootstrap] (https://startbootstrap.com/template/scrolling-nav) which is licensed under the [MIT License] (https://opensource.org/licenses/MIT). <br> The following changes are made to the website to make it a better fit for this project.
-<ul style="margin-top:10px;">
+<ul>
     <li> The title and navbar brand name is changed to Sina Tech Services. </li>
     <li> The text in the header section is updated to welcome visitors to the webpage and display an attractive slogan. </li>
     <li> The "About Us" section of the webpage is updated to  display about the company's history and mission.</li>
     <li> The "Services" section of the webpage is updated to display the services offered by the company.</li>
     <li> The "Contact" section of the webpage is updated to display icons and data such as address, phone number, email address, and business hours of the company. </li>
     <li> In the footer section of the webpage, it is stated that this website is licensed under MIT License </li>
+</ul>
+
+<h2 id = "move-website"> Moving Website to the Server </h2>
+Now that the webpages are developed, we need to move it to the virtual machine, making the website live and enabling people to visit the website from anywhere in the world. Follow the below steps to successfully move the website to the configured server.
+<ul>
+    <li> Open your Linux command line and navigate to the folder where the key pair "sinatech-webserver-key" is saved. </li>
+    <li> Then type the given code to gain SSH access into the virtual machine <pre> <code> ssh -i sinatech-webserver-key.pem ubuntu@sinatechservices.com </code> </pre> </li>
+    <li> Once accessed, navigate to the folder where a default html page is saved <pre> <code> cd /var/www/html</code> </pre></li>
+    <li> Remove the default html page <pre> <code> sudo rm index.html</code> </pre></li>
+    <li> Once removed, exit the EC2 instance, comeback to Linux command line, and uoload the necessary website files to the same folder where the key pair "sinatech-webserver-key.pem" is saved.</li>
+    <li> Use the following command to move each file in home directory of the virtual machine. <pre> <code> scp -i sinatech-webserver-key.pem filename ubuntu@sinatechservices.com:~/</code> </pre></li>
+    <li> Now SSH into the virtual machine move the website files from home directory to /var/www/html using sudo command. <pre> <code> sudo mv filename /var/www/html</code> </pre></li>
+    <li> Once all the files are moved to /var/www/html the virtual machine will start hosting the website and it can be accessed by typing the domain name "www.sinatechservices.com" in the browser.</li>
 </ul>
