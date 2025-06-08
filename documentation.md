@@ -100,7 +100,7 @@ Now that our website is live and functioning properly, we need to get SSL Certif
 <ul>
     <li> SSH into your virtual machine and remove any certbot auto using this command  <pre> <code> sudo apt-get remove certbot </code> </pre></li>
     <li> Install certbot in the virtual machine  <pre> <code> sudo snap install --classic certbot </code> </pre></li>
-    <li> run Certbot using the following command  <pre> <code> sudo ln -s /snap/bin/certbot /usr/bin/certbot </code> </pre></li>
+    <li> Run Certbot using the following command  <pre> <code> sudo ln -s /snap/bin/certbot /usr/bin/certbot </code> </pre></li>
     <li> Get and serve certificate on the website  <pre> <code> sudo certbot --apache </code> </pre></li>
     <li> Set up automatic renewals for the website before they expire  <pre> <code> sudo certbot renew --dry-run </code> </pre></li>
     <li> To confirm if the SSL certificate is set up successfully, look up for the lock icon in the search bar next to the domain name.</li>
