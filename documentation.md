@@ -11,6 +11,7 @@
     <li> <a href = "#domain"> Domain Registration and Configuration </a> </li>
     <li> <a href = "#website"> Website Development </a> </li>
     <li> <a href = "#move-website"> Moving Website to the Server </a> </li>
+    <li> <a href = "#certificate"> Getting SSL Certificate </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
@@ -92,4 +93,15 @@ Now that the webpages are developed, we need to move it to the virtual machine, 
     <li> Use the following command to move each file to home directory of the virtual machine. <pre> <code> scp -i sinatech-webserver-key.pem filename ubuntu@sinatechservices.com:~/</code> </pre></li>
     <li> Now SSH into the virtual machine and move the website files from home directory to /var/www/html using sudo command. <pre> <code> sudo mv filename /var/www/html</code> </pre></li>
     <li> Once all the files are moved to /var/www/html the virtual machine will start hosting the website and it can be accessed by typing the domain name "www.sinatechservices.com" in the browser.</li>
+</ul>
+
+<h2 id = "certificate"> Getting SSL Certificate </h2>
+Now that our website is live and functioning properly, we need to get SSL Certificate to authenticate our website and enable HTTPS encryption. for this project, we will get SSL certificate from Let's Encrypt. Follow the below steps to get SSL Certificate for sinatechservices.com
+<ul>
+    <li> SSH into your virtual machine and remove any certbot auto using this command  <pre> <code> sudo apt-get remove certbot </code> </pre></li>
+    <li> Install certbot in the virtual machine  <pre> <code> sudo snap install --classic certbot </code> </pre></li>
+    <li> run Certbot using the following command  <pre> <code> sudo ln -s /snap/bin/certbot /usr/bin/certbot </code> </pre></li>
+    <li> Get and serve certificate on the website  <pre> <code> sudo certbot --apache </code> </pre></li>
+    <li> Set up automatic renewals for the website before they expire  <pre> <code> sudo certbot renew --dry-run </code> </pre></li>
+    <li> To confirm if the SSL certificate is set up successfully, look up for the lock icon in the search bar next to the domain name.</li>
 </ul>
