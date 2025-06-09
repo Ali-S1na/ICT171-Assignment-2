@@ -112,7 +112,7 @@ Now that our website is live and functioning properly, we need to get SSL Certif
 In Linux, we can create script that consists of set of commands executed with just one line. We can create a linux script to get SSL Certificate for sinatechservices.com from Let's Encrypt. This helps to reduce the workload and promotes code efficiency. Follow the given steps to successfully create a Linux script for getting SSL Certificate.
 <ul>
     <li> Open your Linux command line and create a bash script  <pre> <code> nano SSL-script.sh </code> </pre></li>
-    <li> Copy the given code to create a bash script for getting SSL Certificate from Let's Encrypt  <pre> <code> #!/binbash <br> sudo apt-get remove certbot <br>
+    <li> Copy the given code to create a bash script for getting SSL Certificate from Let's Encrypt  <pre> <code> #!/bin/bash <br> sudo apt-get remove certbot <br>
     sudo snap install --classic certbot <br>
     sudo ln -s /snap/bin/certbot /usr/bin/certbot <br>
     sudo certbot --apache <br>
