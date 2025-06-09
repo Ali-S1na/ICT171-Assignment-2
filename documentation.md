@@ -23,6 +23,7 @@
     <li> <b> Cloud Provider: </b> AWS EC2  </li>
     <li> <b> Instance Type: </b> t2.micro  </li>
     <li> <b> Operating System: </b> Ubuntu 24.02 LTS  </li>
+    <li> <b> Server IP Address: </b> 3.25.51.189  </li>
     <li> <b> Domain: </b> www.sinatechservices.com  </li>
     <li> <b> Video Explainer: </b> <a href = "https://1drv.ms/v/c/b8298d2513159f7f/EVvriU7SkcBCvdm2bizIxg4B7V4ODcv7bNbehRbxP4_wbQ?e=mHCF01"> Click here </a> </li>
 </ul>
