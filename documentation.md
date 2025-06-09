@@ -13,6 +13,7 @@
     <li> <a href = "#move-website"> Moving Website to the Server </a> </li>
     <li> <a href = "#certificate"> Getting SSL Certificate </a> </li>
     <li> <a href = "#script"> Linux Script for SSL Certificate </a> </li>
+    <li> <a href = "#conclusion"> Conclusion </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
@@ -122,3 +123,6 @@ In Linux, we can create script that consists of set of commands executed with ju
     <li> Once moved.navigate to /var/www/html and run the bash script to get SSL Certificate for sinatechservices.com  <pre> <code> ./SSL-script.sh </code> </pre></li>
     The script will run the commands to get and display SSL Certificate on sinatechservices.com website and once the script is run, the website will be opened on Firefox browser to check if the lock icon beside the domain name in search bar appears.
 </ul>
+
+<h2 id = "conclusion"> Conclusion </h2>
+This is the end of the documentation. It includes all the necessary steps and codes, explained thoroughly to make it easy for future developers to replicate or debug this project in case any issue occurs.
