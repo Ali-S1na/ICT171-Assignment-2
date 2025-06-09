@@ -12,6 +12,7 @@
     <li> <a href = "#website"> Website Development </a> </li>
     <li> <a href = "#move-website"> Moving Website to the Server </a> </li>
     <li> <a href = "#certificate"> Getting SSL Certificate </a> </li>
+    <li> <a href = "#script"> Linux Script for SSL Certificate </a> </li>
 </ul>
 
 <h2 id = "getting-started"> Getting Started </h2>
@@ -100,6 +101,21 @@ Now that our website is live and functioning properly, we need to get SSL Certif
 <ul>
     <li> SSH into your virtual machine and remove any certbot auto using this command  <pre> <code> sudo apt-get remove certbot </code> </pre></li>
     <li> Install certbot in the virtual machine  <pre> <code> sudo snap install --classic certbot </code> </pre></li>
+    <li> Run Certbot using the following command  <pre> <code> sudo ln -s /snap/bin/certbot /usr/bin/certbot </code> </pre></li>
+    <li> Get and serve certificate on the website  <pre> <code> sudo certbot --apache </code> </pre></li>
+    <li> Set up automatic renewals for the website before they expire  <pre> <code> sudo certbot renew --dry-run </code> </pre></li>
+    <li> To confirm if the SSL certificate is set up successfully, look up for the lock icon in the search bar next to the domain name.</li>
+</ul>
+
+<h2 id = "script"> Linux Script for SSL Certificate </h2>
+In Linux, we can create script that consists of set of commands executed with just one line. We can create a linux script to get SSL Certificate for sinatechservices.com from Let's Encrypt. This helps to reduce the workload and promotes code efficiency. Follow the given steps to successfully create a Linux script for getting SSL Certificate.
+<ul>
+    <li> Open your Linux command line and create a bash script  <pre> <code> nano SSL-script.sh </code> </pre></li>
+    <li> Copy the given code to create a bash script for getting SSL Certificate from Let's Encrypt  <pre> <code> #!/binbash <br> sudo apt-get remove certbot <br>
+    sudo snap install --classic certbot <br>
+    sudo ln -s /snap/bin/certbot /usr/bin/certbot <br>
+    sudo certbot --apache <br>
+    sudo certbot renew --dry-run </code> </pre></li>
     <li> Run Certbot using the following command  <pre> <code> sudo ln -s /snap/bin/certbot /usr/bin/certbot </code> </pre></li>
     <li> Get and serve certificate on the website  <pre> <code> sudo certbot --apache </code> </pre></li>
     <li> Set up automatic renewals for the website before they expire  <pre> <code> sudo certbot renew --dry-run </code> </pre></li>
