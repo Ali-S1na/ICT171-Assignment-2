@@ -116,8 +116,9 @@ In Linux, we can create script that consists of set of commands executed with ju
     sudo ln -s /snap/bin/certbot /usr/bin/certbot <br>
     sudo certbot --apache <br>
     sudo certbot renew --dry-run </code> </pre></li>
-    <li> Run Certbot using the following command  <pre> <code> sudo ln -s /snap/bin/certbot /usr/bin/certbot </code> </pre></li>
-    <li> Get and serve certificate on the website  <pre> <code> sudo certbot --apache </code> </pre></li>
-    <li> Set up automatic renewals for the website before they expire  <pre> <code> sudo certbot renew --dry-run </code> </pre></li>
-    <li> To confirm if the SSL certificate is set up successfully, look up for the lock icon in the search bar next to the domain name.</li>
+    <li> Change the file permissions of the script to make it executable  <pre> <code> sudo chmod u=rwx SSL-script.sh </code> </pre></li>
+    <li> Exit nano and move the script to the virtual machine where rest of the files are located  <pre> <code> scp -i sinatech-webserver-key.pem SSL-script.sh ubuntu@sinatechservices.com:~/ </code> </pre></li>
+    <li> Now SSH into the virtual machine and move the bash scrript from home directory to /var/www/html using sudo command. <pre> <code> sudo mv SSL-script.sh /var/www/html</code> </pre></li>
+    <li> Once moved.navigate to /var/www/html and run the bash script to get SSL Certificate for sinatechservices.com  <pre> <code> ./SSL-script.sh </code> </pre></li>
+    The script will run the commands to get and display SSL Certificate on sinatechservices.com website and once the script is run, the website will be opened on Firefox browser to check if the lock icon beside the domain name in search bar appears.
 </ul>
